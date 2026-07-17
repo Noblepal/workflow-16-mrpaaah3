@@ -5,9 +5,9 @@ export default {
     extend: {
       colors: {
         neon: {
-          green: '#00ff88',
-          cyan: '#00d4ff',
-          violet: '#a78bfa',
+          green: '#059669',
+          cyan: '#0891b2',
+          violet: '#7c3aed',
         }
       }
     },

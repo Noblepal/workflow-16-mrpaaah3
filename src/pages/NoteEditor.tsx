@@ -93,16 +93,16 @@ export default function NoteEditor() {
   const charCount = body.length;
 
   return (
-    <div className="min-h-screen bg-[#0f0f1a]">
+    <div className="min-h-screen bg-[#f8f9fb]">
       {/* Header */}
-      <header className="sticky top-0 z-20 bg-[#0f0f1a]/95 backdrop-blur border-b border-[#1e1e2e]">
+      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-gray-200 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <Link to="/" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/" className="text-gray-400 hover:text-gray-600 transition-colors">
                 <ArrowLeft className="w-5 h-5" />
               </Link>
-              <span className="text-sm text-gray-500">
+              <span className="text-sm text-gray-400">
                 {isNew ? 'New Note' : 'Edit Note'}
               </span>
             </div>
@@ -110,7 +110,7 @@ export default function NoteEditor() {
               {!isNew && (
                 <button
                   onClick={() => setDeleteTarget(true)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all"
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all"
                 >
                   <Trash2 className="w-4 h-4" />
                   <span className="hidden sm:inline">Delete</span>
@@ -118,7 +118,7 @@ export default function NoteEditor() {
               )}
               <button
                 onClick={handleSave}
-                className="flex items-center gap-1.5 px-4 py-1.5 bg-neon-cyan text-[#0f0f1a] font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm"
+                className="flex items-center gap-1.5 px-4 py-1.5 bg-neon-cyan text-white font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm shadow-sm"
               >
                 <Save className="w-4 h-4" />
                 <span className="hidden sm:inline">{saved ? 'Saved!' : 'Save'}</span>
@@ -136,25 +136,25 @@ export default function NoteEditor() {
             placeholder="Note title..."
             value={title}
             onChange={e => setTitle(e.target.value)}
-            className="w-full text-2xl sm:text-3xl font-bold text-white bg-transparent border-none outline-none placeholder-gray-600 mb-4"
+            className="w-full text-2xl sm:text-3xl font-bold text-gray-800 bg-transparent border-none outline-none placeholder-gray-300 mb-4"
             autoFocus
           />
           <textarea
             placeholder="Start writing..."
             value={body}
             onChange={e => setBody(e.target.value)}
-            className="w-full min-h-[50vh] text-base text-gray-300 bg-transparent border-none outline-none placeholder-gray-600 leading-relaxed resize-none"
+            className="w-full min-h-[50vh] text-base text-gray-600 bg-transparent border-none outline-none placeholder-gray-300 leading-relaxed resize-none"
           />
         </div>
 
         {/* Status bar */}
-        <div className="mt-6 pt-4 border-t border-[#1e1e2e] flex items-center justify-between text-xs text-gray-500">
+        <div className="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between text-xs text-gray-400">
           <div className="flex items-center gap-4">
             <span>{wordCount} words</span>
             <span>{charCount} characters</span>
           </div>
           {saved && (
-            <span className="text-neon-cyan animate-fade-in">Saved</span>
+            <span className="text-neon-cyan font-medium animate-fade-in">Saved</span>
           )}
         </div>
       </main>

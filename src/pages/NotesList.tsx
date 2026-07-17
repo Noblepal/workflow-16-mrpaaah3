@@ -60,25 +60,25 @@ export default function NotesList() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f0f1a]">
+    <div className="min-h-screen bg-[#f8f9fb]">
       {/* Header */}
-      <header className="sticky top-0 z-20 bg-[#0f0f1a]/95 backdrop-blur border-b border-[#1e1e2e]">
+      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-gray-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <Link to="/" className="text-neon-cyan hover:text-neon-cyan/80 transition-colors">
+              <Link to="/" className="text-neon-cyan hover:text-neon-cyan/70 transition-colors">
                 <ArrowLeft className="w-5 h-5" />
               </Link>
-              <h1 className="text-xl font-bold text-white">
-                <span className="text-neon-cyan">Dark</span>Notes
+              <h1 className="text-xl font-bold text-gray-800">
+                <span className="text-neon-cyan">Light</span>Notes
               </h1>
-              <span className="text-xs text-gray-500 bg-[#1e1e2e] px-2 py-0.5 rounded-full">
+              <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full font-medium">
                 {notes.length}
               </span>
             </div>
             <Link
               to="/notes/new"
-              className="flex items-center gap-2 px-4 py-2 bg-neon-cyan text-[#0f0f1a] font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm"
+              className="flex items-center gap-2 px-4 py-2 bg-neon-cyan text-white font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm shadow-sm"
             >
               <Plus className="w-4 h-4" />
               <span className="hidden sm:inline">New Note</span>
@@ -91,13 +91,13 @@ export default function NotesList() {
         {/* Search */}
         {notes.length > 0 && (
           <div className="relative mb-6">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
               type="text"
               placeholder="Search notes..."
               value={search}
               onChange={e => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-[#1a1a2e] border border-[#2a2a3e] rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-neon-cyan/50 focus:ring-1 focus:ring-neon-cyan/20 transition-all text-sm"
+              className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 placeholder-gray-400 focus:outline-none focus:border-neon-cyan/50 focus:ring-2 focus:ring-neon-cyan/20 transition-all text-sm shadow-sm"
             />
           </div>
         )}
@@ -111,7 +111,7 @@ export default function NotesList() {
               action={
                 <Link
                   to="/notes/new"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-neon-cyan text-[#0f0f1a] font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-neon-cyan text-white font-semibold rounded-lg hover:bg-neon-cyan/90 transition-all text-sm shadow-sm"
                 >
                   <Plus className="w-4 h-4" />
                   Create Note
@@ -129,18 +129,18 @@ export default function NotesList() {
             {filtered.map((note) => (
               <div
                 key={note.id}
-                className="group relative bg-[#1a1a2e] border border-[#2a2a3e] rounded-xl p-5 hover:border-neon-cyan/30 hover:shadow-lg hover:shadow-neon-cyan/5 transition-all cursor-pointer animate-fade-in"
+                className="group relative bg-white border border-gray-200 rounded-xl p-5 hover:border-neon-cyan/40 hover:shadow-lg hover:shadow-neon-cyan/5 transition-all cursor-pointer animate-fade-in"
                 onClick={() => navigate(`/notes/${note.id}`)}
               >
-                <h3 className="text-base font-semibold text-white truncate pr-16">
+                <h3 className="text-base font-semibold text-gray-800 truncate pr-16">
                   {note.title || 'Untitled'}
                 </h3>
                 {note.body && (
-                  <p className="mt-2 text-sm text-gray-400 line-clamp-2">
+                  <p className="mt-2 text-sm text-gray-500 line-clamp-2">
                     {getSnippet(note.body)}
                   </p>
                 )}
-                <div className="mt-4 flex items-center gap-2 text-xs text-gray-500">
+                <div className="mt-4 flex items-center gap-2 text-xs text-gray-400">
                   <Clock className="w-3 h-3" />
                   <span>{formatDate(note.updatedAt)}</span>
                 </div>
@@ -156,7 +156,7 @@ export default function NotesList() {
                   </button>
                   <button
                     onClick={(e) => { e.stopPropagation(); setDeleteTarget(note); }}
-                    className="p-1.5 rounded-lg text-gray-400 hover:text-red-400 hover:bg-red-500/10 transition-all"
+                    className="p-1.5 rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-all"
                     title="Delete"
                   >
                     <Trash2 className="w-4 h-4" />

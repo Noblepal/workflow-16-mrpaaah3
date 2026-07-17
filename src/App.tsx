@@ -9,11 +9,11 @@ import ModelOverview from './pages/ModelOverview';
 
 function NotFound() {
   return (
-    <div className="min-h-screen bg-[#0f0f1a] flex items-center justify-center">
+    <div className="min-h-screen bg-[#f8f9fb] flex items-center justify-center">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-white mb-2">Page not found</h2>
-        <p className="text-gray-400 mb-4">The page you're looking for doesn't exist.</p>
-        <Link to="/" className="text-neon-cyan hover:underline">Go back home</Link>
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">Page not found</h2>
+        <p className="text-gray-500 mb-4">The page you're looking for doesn't exist.</p>
+        <Link to="/" className="text-neon-cyan hover:underline font-medium">Go back home</Link>
       </div>
     </div>
   );
