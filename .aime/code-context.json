@@ -200,14 +200,13 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 47,
-      "lastModified": "2026-07-17T18:45:19.969Z",
+      "lines": 46,
+      "lastModified": "2026-07-17T19:13:55.316Z",
       "summary": "App component",
       "exports": [
         "default:App"
       ],
       "imports": [
-        "react",
         "react-router-dom",
         "@aime-platform/aime-feedback-module",
         "./pages/NotesList",
@@ -223,15 +222,46 @@
       "imports": []
     },
     "src/vite-env.d.ts": {
-      "lines": 2,
-      "lastModified": "2026-07-17T18:46:47.966Z",
+      "lines": 11,
+      "lastModified": "2026-07-17T19:08:56.150Z",
       "summary": "vite-env.d.ts",
+      "exports": [],
+      "imports": []
+    },
+    ".env": {
+      "lines": 7,
+      "lastModified": "2026-07-17T19:10:32.155Z",
+      "summary": ".env",
       "exports": [],
       "imports": []
     }
   },
   "dependencies": {},
   "recentChanges": [
+    {
+      "timestamp": "2026-07-17T19:13:55.222Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T19:12:37.066Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T19:10:32.103Z",
+      "file": ".env",
+      "change": "modifyd .env",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T19:08:56.047Z",
+      "file": "src/vite-env.d.ts",
+      "change": "modifyd src/vite-env.d.ts",
+      "type": "modify"
+    },
     {
       "timestamp": "2026-07-17T18:46:47.956Z",
       "file": "src/vite-env.d.ts",
@@ -266,30 +296,6 @@
       "timestamp": "2026-07-17T18:44:41.887Z",
       "file": "src/pages/NotesList.tsx",
       "change": "modifyd src/pages/NotesList.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-17T18:44:25.258Z",
-      "file": "src/main.tsx",
-      "change": "modifyd src/main.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-17T18:44:10.432Z",
-      "file": "src/components/EmptyState.tsx",
-      "change": "modifyd src/components/EmptyState.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-17T18:44:04.988Z",
-      "file": "src/components/ConfirmDialog.tsx",
-      "change": "modifyd src/components/ConfirmDialog.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-17T18:43:59.157Z",
-      "file": "src/types.ts",
-      "change": "modifyd src/types.ts",
       "type": "modify"
     }
   ]

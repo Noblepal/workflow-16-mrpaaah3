@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { FeedbackProvider } from '@aime-platform/aime-feedback-module';
 import NotesList from './pages/NotesList';
 import NoteEditor from './pages/NoteEditor';
 import ModelOverview from './pages/ModelOverview';
+
+// Set route manifest synchronously before any render so the capture tool can read it immediately
+(window as any).__APP_ROUTES__ = ['#/', '#/notes/new', '#/notes/sample-note-id', '#/model-overview'];
 
 function NotFound() {
   return (
@@ -18,9 +20,6 @@ function NotFound() {
 }
 
 export default function App() {
-  useEffect(() => {
-    (window as any).__APP_ROUTES__ = ['/', '/notes/new', '/notes/sample-note-id', '/model-overview'];
-  }, []);
 
   return (
     <FeedbackProvider
