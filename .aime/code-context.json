@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "project": {
+    "name": "app",
+    "stack": [],
+    "createdAt": "2026-07-17T18:41:15.058Z"
+  },
+  "files": {
+    ".aime/blueprint/customers.json": {
+      "lines": 8,
+      "lastModified": "2026-07-17T18:42:45.638Z",
+      "summary": "customers.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/functions.json": {
+      "lines": 51,
+      "lastModified": "2026-07-17T18:42:51.721Z",
+      "summary": "functions.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/experiences.json": {
+      "lines": 45,
+      "lastModified": "2026-07-17T18:43:15.270Z",
+      "summary": "experiences.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/information.json": {
+      "lines": 69,
+      "lastModified": "2026-07-17T18:43:21.085Z",
+      "summary": "information.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/knowledge.json": {
+      "lines": 39,
+      "lastModified": "2026-07-17T18:43:25.266Z",
+      "summary": "knowledge.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/services.json": {
+      "lines": 53,
+      "lastModified": "2026-07-17T18:43:30.173Z",
+      "summary": "services.json",
+      "exports": [],
+      "imports": []
+    },
+    "tsconfig.node.json": {
+      "lines": 12,
+      "lastModified": "2026-07-17T18:43:39.619Z",
+      "summary": "Configuration file",
+      "exports": [],
+      "imports": []
+    },
+    "tailwind.config.js": {
+      "lines": 17,
+      "lastModified": "2026-07-17T18:43:40.811Z",
+      "summary": "Configuration file",
+      "exports": [
+        "default"
+      ],
+      "imports": []
+    },
+    "postcss.config.js": {
+      "lines": 2,
+      "lastModified": "2026-07-17T18:43:41.316Z",
+      "summary": "Configuration file",
+      "exports": [
+        "default"
+      ],
+      "imports": []
+    },
+    "package.json": {
+      "lines": 29,
+      "lastModified": "2026-07-17T18:43:49.803Z",
+      "summary": "Package configuration",
+      "exports": [],
+      "imports": []
+    },
+    "vite.config.ts": {
+      "lines": 4,
+      "lastModified": "2026-07-17T18:43:50.402Z",
+      "summary": "Configuration file",
+      "exports": [
+        "default:defineConfig"
+      ],
+      "imports": [
+        "vite",
+        "@vitejs/plugin-react"
+      ]
+    },
+    "tsconfig.json": {
+      "lines": 24,
+      "lastModified": "2026-07-17T18:43:52.214Z",
+      "summary": "TypeScript configuration",
+      "exports": [],
+      "imports": []
+    },
+    "index.html": {
+      "lines": 13,
+      "lastModified": "2026-07-17T18:43:53.427Z",
+      "summary": "HTML entry point",
+      "exports": [],
+      "imports": []
+    },
+    "src/index.css": {
+      "lines": 47,
+      "lastModified": "2026-07-17T18:43:58.579Z",
+      "summary": "Stylesheet",
+      "exports": [],
+      "imports": []
+    },
+    "src/types.ts": {
+      "lines": 8,
+      "lastModified": "2026-07-17T18:43:59.165Z",
+      "summary": "Type definitions",
+      "exports": [
+        "Note"
+      ],
+      "imports": []
+    },
+    "src/components/ConfirmDialog.tsx": {
+      "lines": 48,
+      "lastModified": "2026-07-17T18:44:05.000Z",
+      "summary": "ConfirmDialog component",
+      "exports": [
+        "default:ConfirmDialog"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/components/EmptyState.tsx": {
+      "lines": 22,
+      "lastModified": "2026-07-17T18:44:10.506Z",
+      "summary": "EmptyState component",
+      "exports": [
+        "default:EmptyState"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/main.tsx": {
+      "lines": 6,
+      "lastModified": "2026-07-17T18:44:25.447Z",
+      "summary": "main component",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./App",
+        "./index.css"
+      ]
+    },
+    "src/pages/NotesList.tsx": {
+      "lines": 182,
+      "lastModified": "2026-07-17T18:44:41.902Z",
+      "summary": "NotesList component",
+      "exports": [
+        "default:NotesList"
+      ],
+      "imports": [
+        "lucide-react",
+        "react",
+        "react-router-dom",
+        "../types",
+        "../components/ConfirmDialog",
+        "../components/EmptyState"
+      ]
+    },
+    "src/pages/NoteEditor.tsx": {
+      "lines": 173,
+      "lastModified": "2026-07-17T18:44:55.429Z",
+      "summary": "NoteEditor component",
+      "exports": [
+        "default:NoteEditor"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "lucide-react",
+        "../types",
+        "../components/ConfirmDialog"
+      ]
+    },
+    "src/pages/ModelOverview.tsx": {
+      "lines": 102,
+      "lastModified": "2026-07-17T18:45:12.710Z",
+      "summary": "ModelOverview component",
+      "exports": [
+        "default:ModelOverview"
+      ],
+      "imports": [
+        "react-router-dom",
+        "lucide-react"
+      ]
+    },
+    "src/App.tsx": {
+      "lines": 47,
+      "lastModified": "2026-07-17T18:45:19.969Z",
+      "summary": "App component",
+      "exports": [
+        "default:App"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "@aime-platform/aime-feedback-module",
+        "./pages/NotesList",
+        "./pages/NoteEditor",
+        "./pages/ModelOverview"
+      ]
+    },
+    ".env.example": {
+      "lines": 7,
+      "lastModified": "2026-07-17T18:45:23.155Z",
+      "summary": ".env.example",
+      "exports": [],
+      "imports": []
+    },
+    "src/vite-env.d.ts": {
+      "lines": 2,
+      "lastModified": "2026-07-17T18:46:47.966Z",
+      "summary": "vite-env.d.ts",
+      "exports": [],
+      "imports": []
+    }
+  },
+  "dependencies": {},
+  "recentChanges": [
+    {
+      "timestamp": "2026-07-17T18:46:47.956Z",
+      "file": "src/vite-env.d.ts",
+      "change": "modifyd src/vite-env.d.ts",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:45:23.145Z",
+      "file": ".env.example",
+      "change": "modifyd .env.example",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:45:19.959Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:45:12.699Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:44:55.415Z",
+      "file": "src/pages/NoteEditor.tsx",
+      "change": "modifyd src/pages/NoteEditor.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:44:41.887Z",
+      "file": "src/pages/NotesList.tsx",
+      "change": "modifyd src/pages/NotesList.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:44:25.258Z",
+      "file": "src/main.tsx",
+      "change": "modifyd src/main.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:44:10.432Z",
+      "file": "src/components/EmptyState.tsx",
+      "change": "modifyd src/components/EmptyState.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:44:04.988Z",
+      "file": "src/components/ConfirmDialog.tsx",
+      "change": "modifyd src/components/ConfirmDialog.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-17T18:43:59.157Z",
+      "file": "src/types.ts",
+      "change": "modifyd src/types.ts",
+      "type": "modify"
+    }
+  ]
+}
